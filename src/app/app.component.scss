@@ -1,0 +1,98 @@
+body {
+    background-size: cover;
+}
+
+.login {
+    padding: 190px 40%;
+}
+
+.container {
+    padding: 26px;
+}
+
+.fieldsetlogin {
+    font-family: "Old English Text MT", sans-serif;
+    border-radius: 20px;
+    box-shadow: 0 0 10px blue;
+    border: 3px solid rgb(16, 11, 125);
+    background: linear-gradient(45deg, rgb(36, 155, 70), rgb(51, 120, 211));
+}
+
+.legendlogin {
+    padding-left: 7px;
+    padding-right: 10px;
+    border-radius: inherit;
+    box-shadow: 0 0 10px blue;
+    border: 3px solid rgb(16, 11, 125);
+    background: linear-gradient(45deg, rgb(17, 183, 17), rgb(132, 255, 9));
+}
+
+input[type=email],
+input[type=password] {
+    border-radius: 20px;
+    height: 20px;
+    width: 200px;
+    font-size: 12px;
+    background-color: rgb(208, 171, 202);
+    color: rgb(21, 3, 3);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 12px 20px;
+    margin: 18px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.loginbutton {
+    float: right;
+}
+
+button {
+    background-color: #ffb70e;
+    color: rgb(46, 33, 125);
+    padding: 10px 20px;
+    font-size: 24px;
+    margin: 18px 0;
+    border: 3px solid rgb(16, 11, 125);
+    border-radius: 20px;
+    text-align: center;
+    box-sizing: content-box;
+    cursor: pointer;
+    width: 50%;
+    font-family: "Old English Text MT", sans-serif;
+}
+
+
+button:hover {
+    opacity: 0.7;
+}
+
+.register {
+    padding: 190px 40%;
+}
+
+.tableform {
+    padding: 190px 40%;
+}
+.buttons
+{
+    background-color: #ffb70e;
+    color: rgb(46, 33, 125);
+    padding: 5px 5px;
+    font-size: 14px;
+    margin: 10px 0;
+    border: 3px solid rgb(16, 11, 125);
+    border-radius: 20px;
+    text-align: center;
+    box-sizing: content-box;
+    cursor: pointer;
+    width: 15%;
+    font-family: "Old English Text MT", sans-serif;
+}
+table th{
+    color: rgb(46, 33, 125);
+    background-color: #ffb70e; 
+}
+.tabback{
+    background-color: #0ec3ff; 
+}

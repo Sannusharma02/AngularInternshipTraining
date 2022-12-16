@@ -1,0 +1,20 @@
+<div class="tableform">
+  <button class="buttons" (click)="back()">back</button>
+  <table class="tabs" border="1px" style="width:75%;">
+    <tr>
+      <th>Name</th>
+      <th>Father's Name</th>
+      <th>MobileNumber</th>
+      <th style="width: 200px;">Passing Year</th>
+      <th colspan="2">Edit/Delete</th>
+    </tr>
+    <tr *ngFor="let data of dataArray; let rindex = index">
+      <td class="tabback">{{data.userName}}</td>
+      <td class="tabback">{{data.mobileNumber}}</td>
+      <td class="tabback">{{data.fatherName}}</td>
+      <td class="tabback" style="width: 200px;">{{data.yearofpassing}}</td>
+      <td class="tabback" style="color: green;"><button class="edit" (click)="onClickEdit(data, rindex)">Edit</button></td>
+      <td class="tabback"style="color: red;"><button class="delete" (click)="onClickDelete(rindex)">Delete</button></td>
+    </tr>
+  </table>
+</div>

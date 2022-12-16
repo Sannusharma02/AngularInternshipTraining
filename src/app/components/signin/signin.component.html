@@ -1,0 +1,29 @@
+<body>
+  <form class="login" *ngIf="!showdataFlag">
+    <fieldset class="fieldsetlogin">
+      <legend class="legendlogin"> Login </legend>
+      <div class="container">
+        <br>
+        <mat-form-field appearance="outline" style="width:100%">
+          <mat-label for="email">Email:</mat-label>
+          <input matInput type="email" placeholder="enter your e-mail" required name="email"
+            [(ngModel)]="logindata.email">
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="outline" style="width:100%">
+          <mat-label for="password">Password:</mat-label>
+          <input matInput [type]="hide ? 'password' : 'text'" placeholder="enter your Password" required name="password"
+            [(ngModel)]="logindata.password">
+          <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+            [attr.aria-pressed]="hide">
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}
+            </mat-icon>
+          </button>
+        </mat-form-field>
+        <br>
+        <div class="loginbutton">
+          <button mat-raised-button color="warn" class="button" (click)="loginFunction()">Login</button>
+        </div>
+      </div>
+    </fieldset>
+  </form>

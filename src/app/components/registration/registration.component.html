@@ -1,0 +1,52 @@
+<div class="register">
+  <fieldset class="fieldsetlogin">
+    <legend class="legendlogin"> Welcome {{logindata.email}}!!!</legend>
+    <h2>Please type in following details to register</h2>
+    <table>
+      <div class="form-group">
+        <tr>
+          <td><label>Full Name : </label></td>
+          <mat-form-field appearance="fill">
+            <td><mat-label><input matInput type="text" name="userName" placeholder="User Name"
+                  [(ngModel)]="register.userName"></mat-label></td>
+          </mat-form-field>
+        </tr>
+      </div>
+      <div class="form-group">
+        <tr>
+          <td><label>Father's Name</label></td>
+          <mat-form-field appearance="fill">
+            <td><mat-label>
+                <input matInput type="text" name="fatherName" placeholder="Father's Name"
+                  [(ngModel)]="register.fatherName"></mat-label>
+            </td>
+          </mat-form-field>
+        </tr>
+      </div>
+      <div class="form-group">
+        <tr>
+          <td><label>Phone number</label></td>
+          <mat-form-field appearance="fill" >
+            <td><mat-label>
+            </mat-label>
+                <input matInput type="text" name="mobileNumber" required placeholder="Mobile Number" [(ngModel)]="register.mobileNumber">
+            </td>
+            <mat-icon matSuffix>phone</mat-icon>
+            <mat-hint>Include area code</mat-hint>
+          </mat-form-field>
+        </tr>
+      </div>
+
+      <div class="form-group">
+        <tr>
+          <td><label>Passing Year</label></td>
+          <td><input type="date" name="yearofpassing" placeholder="Passing Year" [(ngModel)]="register.yearofpassing">
+          </td>
+        </tr>
+      </div>
+      <div class="loginbutton" align="center">
+        <button mat-raised-button color="accent" (click)="registerFuntion()">Submit</button>
+      </div>
+    </table>
+  </fieldset>
+</div>
